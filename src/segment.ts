@@ -16,8 +16,6 @@ export class TopNSegment {
   segments: Segment[] = []
   words = new WordCounter()
 
-  constructor() {}
-
   addSegment(segment: string) {
     this.segments.push({
       segment,
