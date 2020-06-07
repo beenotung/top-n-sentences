@@ -8,23 +8,8 @@ b.bundle((err, src) => {
     console.error(err)
     process.exit(1)
   }
-  let code = `// ==UserScript==
-// @name         top-n-sentences
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  To make an article shorter for quick skim
-// @author       Beeno Tung
-// @match        https://*
-// @match        http://*
-// @grant        none
-// ==/UserScript==
-
-(function() {
-    'use strict';
-
-    // Your code here...
-    ${src.toString()}
-})();`
+  let code = fs.readFileSync('src/header.js').toString()
+  code = code.replace('// Your code here...', src.toString())
   fs.writeFileSync('dist/client.js', code)
   console.log('saved to dist/client.js')
   clip.copy(code, err => {
