@@ -27,6 +27,18 @@ from
 had
 with
 as
+
+you
+i
+be
+your
+this
+have
+if
+or
+they
+at
+on
 `
     .split('\n')
     .map(s => s.trim())
