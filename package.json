@@ -1,13 +1,12 @@
 {
   "name": "top-n-sentences",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": {
-    "name": "Beeno Tung",
-    "email": "aabbcc1241@yahoo.com.hk",
-    "url": "https://beeno-tung.surge.sh"
-  },
+  "keywords": [
+    "userscript",
+    "skim",
+    "shorter text"
+  ],
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2-Clause",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -53,5 +52,14 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-etc": "^1.10.1",
     "typescript": "^3.9.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/top-n-sentences.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beenotung/top-n-sentences/issues"
+  },
+  "homepage": "https://github.com/beenotung/top-n-sentences#readme",
+  "description": "a userscript to make an article (website) shorter for quick skim"
 }
